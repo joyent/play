@@ -1,0 +1,14 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "joyent eng play repo",
+  "main": "lib/play.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyent/play.git"
+  },
+  "author": "Joyent (https://joyent.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/joyent/play#readme"
+}
