@@ -7,3 +7,6 @@ test:
 	@echo "Tests pass!"
 
 
+check:
+	echo "FAIL!"
+	exit 1
