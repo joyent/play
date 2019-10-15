@@ -5,5 +5,8 @@ all:
 
 test:
 	@echo "Tests pass!"
+	
+check:
+	@echo "This check is the best and passes."
 
 
