@@ -1,6 +1,6 @@
 {
   "name": "play",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "joyent eng play repo",
   "main": "lib/play.js",
   "private": true,
