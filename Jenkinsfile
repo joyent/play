@@ -1,11 +1,12 @@
-pipeline {
+@Library('jenkins-joylib@v1.0.1') _
 
+pipeline {
     agent {
-        label '!platform:true && image_ver:18.4.0 && pkgsrc_arch:x86_64 && pi:20151126T062538Z && jenkins_agent:2'
+        label joyCommonLabels(image_ver: '18.4.0')
     }
 
     options {
-        buildDiscarder(logRotator(numToKeepStr: '90'))
+        buildDiscarder(logRotator(numToKeepStr: '30'))
         timestamps()
     }
 
@@ -14,6 +15,14 @@ pipeline {
             steps{
                 sh('make check')
             }
+        }
+    }
+
+    post {
+        always {
+            joyMattermostNotification()
+            joyMattermostNotification('botplay')
+            joyMattermostNotification('rebalancer')
         }
     }
 }
