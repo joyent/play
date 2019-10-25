@@ -21,7 +21,7 @@ pipeline {
     post {
         always {
             joyMattermostNotification()
-            //joyMattermostNotification('botplay')
+            joyMattermostNotification('botplay')
             //joyMattermostNotification('rebalancer')
         }
     }
