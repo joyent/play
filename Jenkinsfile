@@ -20,8 +20,8 @@ pipeline {
 
     post {
         always {
-            //joyMattermostNotification()
-            joyMattermostNotification('botplay')
+            joyMattermostNotification('jenkins')
+            //joyMattermostNotification('botplay')
             //joyMattermostNotification('rebalancer')
         }
     }
