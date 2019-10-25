@@ -1,4 +1,4 @@
-@Library('jenkins-joylib@TOOLS-2355') _
+@Library('jenkins-joylib@v1.0.1') _
 
 pipeline {
     agent {
@@ -20,9 +20,7 @@ pipeline {
 
     post {
         always {
-            joyMattermostNotification('jenkins')
-            //joyMattermostNotification('botplay')
-            //joyMattermostNotification('rebalancer')
+            joyMattermostNotification(channel: 'jenkins')
         }
     }
 }
