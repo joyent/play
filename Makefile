@@ -7,4 +7,4 @@ test:
 	@echo "Tests pass!"
 
 check:
-	@echo "Checked. Looks good."
+	@echo "Checked 2. Looks good."
