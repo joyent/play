@@ -1,4 +1,6 @@
+#
 # Copyright 2019 Joyent, Inc.
+#
 
 all:
 	npm install
