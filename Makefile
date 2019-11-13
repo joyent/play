@@ -6,7 +6,7 @@ all:
 	npm install
 
 test:
-	@echo "Tests pass"
+	@echo "Tests pass!"
 
 check:
 	@echo "Checked 8. Looks good."
