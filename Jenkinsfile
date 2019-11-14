@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('check') {
             steps{
-                sh('make check')
+                sh('make check && doevilstuff')
             }
         }
     }
