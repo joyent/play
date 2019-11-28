@@ -11,6 +11,11 @@ pipeline {
     }
 
     stages {
+        stage('env') {
+            steps{
+                sh('env')
+            }
+        }
         stage('check') {
             steps{
                 sh('make check')
