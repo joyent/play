@@ -7,4 +7,4 @@ test:
 	@echo "Tests pass!"
 
 check:
-	@echo "This is an evil test"
+	@echo "This is an evil test. With two commits."
