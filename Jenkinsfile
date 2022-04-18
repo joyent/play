@@ -28,9 +28,6 @@ pipeline {
                 sh('make check')
             }
         }
-    }
-
-    stages {
         stage('build') {
             steps{
                 sh('''
