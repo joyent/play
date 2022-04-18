@@ -28,6 +28,11 @@ pipeline {
                 sh('make check')
             }
         }
+        stage('reclean') {
+            steps{
+                sh('git clean -fdx')
+            }
+        }
         stage('build') {
             steps{
                 sh('''

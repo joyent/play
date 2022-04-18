@@ -11,11 +11,14 @@
 
 NAME = play
 
+ENGBLD_USE_BUILDIMAGE   = true
+ENGBLD_REQUIRE          := $(shell git submodule update --init deps/eng)
 include deps/eng/tools/mk/Makefile.defs
 TOP ?= $(error Unable to access eng.git submodule Makefiles.)
 
 # This isn't real, doesn't matter.
 ENGBLD_SKIP_VALIDATE_BUILDENV = true
+RELEASE_TARBALL := $(NAME)-pkg-$(STAMP).tar.gz
 
 all:
 	npm install
