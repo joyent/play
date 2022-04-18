@@ -38,7 +38,6 @@ pipeline {
                 sh('''
 make print-BRANCH
 make print-STAMP
-make all
 ''')
             }
         }
