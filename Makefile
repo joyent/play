@@ -1,4 +1,21 @@
-## Copyright 2019 Joyent, Inc.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+
+#
+# Copyright 2019 Joyent, Inc.
+# Copyright 2022 MNX Cloud, Inc.
+#
+
+NAME = play
+
+include deps/eng/tools/mk/Makefile.defs
+TOP ?= $(error Unable to access eng.git submodule Makefiles.)
+
+# This isn't real, doesn't matter.
+ENGBLD_SKIP_VALIDATE_BUILDENV = true
 
 all:
 	npm install
@@ -6,5 +23,8 @@ all:
 test:
 	@echo "Tests pass!"
 
-check:
+check::
 	@echo "Checked 8. Looks good."
+
+include deps/eng/tools/mk/Makefile.deps
+include deps/eng/tools/mk/Makefile.targ

@@ -1,0 +1,6 @@
+[submodule "eng"]
+	path = deps/eng
+	url = https://github.com/TritonDataCenter/eng.git
+[submodule "deps/eng"]
+	path = deps/eng
+	url = https://github.com/TritonDataCenter/eng.git
