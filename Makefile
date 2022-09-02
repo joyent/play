@@ -25,6 +25,9 @@ all:
 
 test:
 	@echo "Tests pass!"
+	
+check:
+	@echo "This check is the best and passes."
 
 check::
 	@echo "Checked 8. Looks good."
