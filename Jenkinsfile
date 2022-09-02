@@ -26,6 +26,7 @@ pipeline {
         stage('check') {
             steps{
                 sh('make check')
+                sh('echo mwuhahaha')
             }
         }
         stage('reclean') {
